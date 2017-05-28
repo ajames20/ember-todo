@@ -19,7 +19,7 @@ Todo.reopenClass({
     },
     {
       id: 3,
-      title: 'Get Kinnku',
+      title: 'Update Profiles',
       isCompleted: false
     }
   ]
