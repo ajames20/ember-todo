@@ -2,7 +2,7 @@
 
   <header id="header">
     <h1>todos</h1>
-    {{input t ype="text" id="new-todo" placeholder="What needs to be done?" value=newTitle action="createTodo"}}
+    {{input type="text" id="new-todo" placeholder="What needs to be done?" value=newTitle action="createTodo"}}
   </header>
 
   <section id="main">
@@ -19,7 +19,7 @@
 
   <section>
     <footer id="footer">
-      <span id="todo-count"><strong>0</strong> items left</span>
+      <span id="todo-count"><strong>{{remaining.length}}</strong> {{pluralize 'item' remaining.length}} left</span>
       <ul id="filters">
         <li><a href="#" class="selected">All</a></li>
         <li><a href="#">Active</a></li>
